@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*ESTILOS HEADER*/
+header{
+    text-align: center;
+    background-color: black;
+}
+
+#img_header{
+    width: 230px;
+}
+
+nav{
+    background-color: rgb(31, 30, 30);
+}
+
+.linav{
+    list-style: none;
+}
+
+.a_nav{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: x-large;
+    font-family: monospace;
+    padding: 0.60rem 3rem;
+    border-radius: 4px;
+}
+
+.a_nav:hover{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(136, 133, 133);
+}
+
+
+
+/*ESTILOS MEDIA QUERY DEL MENU DEL HEADER*/
+@media (width >= 900px) {
+    #ulnav{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+    }
+    nav{
+        background-color: rgb(31, 30, 30);
+        height: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+}
+
+@media (width <= 899px) {
+    .linav{
+        padding: 10.2px;
+    }
+    #ulnav{
+        padding: 0;
+    }
+}
+
+
+
+/*ESTILOS FOOTER*/
+footer {
+    color: rgba(255, 255, 255, 0.829);
+    background-color: rgb(31, 30, 30);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#correo, #telefono {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.829);
+}
+
+#correo:hover, #telefono:hover{
+    text-decoration: underline;
+}
+
+#img_footer {
+    width: 230px;
+}
+
+.p_footer {
+    margin-top: 2rem;
+}
+
+/*ESTILOS MEDIA QUERY DEL FOOTER y el ASIDE*/
+@media (width >= 930px) {
+    /*FOOTER*/
+    footer{
+        display: flex;
+        justify-content: center;
+        gap: 7rem;
+    }
+    /*ASIDE*/
+    aside{
+        grid-area: aside;
+        margin-left: 20px;
+    }
+    section { grid-area: section;}
+    main{
+        display: grid;
+        grid-gap: 0.3em;
+        grid-template-areas:
+        "aside section section section section";
+    }
+    aside > .p2aside{
+        width: 100%;
+    }
+}
+
+@media (width <= 929px) {
+    /*FOOTER*/
+    footer{
+        text-align: center;
+    }
+    aside > .p2aside{
+        width: 85%;
+    }
+}
+
+/*ESTILOS ASIDE*/
+aside {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+aside > .p2aside {
+    background-color: rgb(31, 30, 30);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: large;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside > #p1aside {
+    font-size: x-large;
+    font-family: monospace;
+    text-align: center;
+}
+
+.a_aside {
+    text-decoration: none;
+    color: white;
+}
+
+.a_aside:hover {
+    background-color: #555555;
+    padding: 0.62rem 2rem 0.63rem 2rem;
+}
+
+.p2aside:hover {
+    background-color: #555555;
+}
+
+
+
+/*ESTILOS TARJETAS*/
+.tarjetas {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: 11px 11px 7px lightgrey;
+    margin: 40px auto;
+}
+
+article:hover {
+    border: 5px solid lightgrey;
+}
+
+.imgarticle {
+    width: 60%;
+    height: auto;
+    padding-top: 10px;
+}
+
+article > h4 {
+    font-size: 30px;
+    font-family: monospace;
+    margin-bottom: 0;
+}
+
+.p_article {
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#section_main {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            372px,
+            1fr
+        )
+    );
+    gap: 1rem;
+}
+
+/*ESTILOS BOTON TARJETA*/
+.mi-boton {
+    padding: 10px 20px;
+    background-color: #343634;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.mi-boton:hover {
+    background-color: #555555;
+}
